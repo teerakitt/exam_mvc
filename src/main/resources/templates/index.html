@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Spring Thymeleaf</title>
+</head>
+<body>
+
+
+
+<form action="go/">
+    <div th:each="total: ${stu}">
+    <tr th:text="${total.stuId}" />
+    <td th:text="${total.subId}" />
+    <input type="text" name="answer" ><br>
+</div>
+    <button  type="submit" onclick="">Check</button>
+
+</form>
+
+</body>
+</html>
